@@ -3,8 +3,13 @@
 - 用于贵大(GZU)课程大作业/结课汇报的通用简易Latex模板
 
 ## 模板下载
+
+[压缩包链接](https://github.com/0zero000zero0/gzu_report_template/releases/tag/v1.0)
+
+OR
+
 ```bash
-git clone
+git clone https://github.com/0zero000zero0/gzu_report_template.git
 ```
 
 ## 使用方法
@@ -18,7 +23,7 @@ git clone
 使用时需前往`gzureport.sty` 对标题、副标题、姓名、学号、院所、页眉等进行设置，然后编辑`main.tex`进行正文编写
 
 
-|  [封面效果图](https://github.com/jweihe/UCAS_Latex_Template/blob/main/figures/ucas_report.png) |  [目录效果图](https://github.com/jweihe/UCAS_Latex_Template/blob/main/figures/index.png)|
+|  [封面效果图](https://github.com/0zero000zero0/gzu_report_template/blob/master/figures/cover.png) |  [正文效果图](https://github.com/0zero000zero0/gzu_report_template/blob/master/figures/image.1.png)|
 |:---:|:---:|
 | ![Résumé](./figures/cover.png) | ![Résumé](./figures/image.1.png)|
 
