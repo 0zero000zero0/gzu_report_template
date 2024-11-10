@@ -23,6 +23,8 @@
 \RequirePackage{enumerate}
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
+\RequirePackage{cleveref}
+\RequirePackage{hyperref}
 
 \lstset{
     language=Python, % 设置语言
@@ -75,7 +77,6 @@
 %     citecolor=orange,
 % }
 
-%%对一些autoref的中文引用名作修改
 \def\equationautorefname{公式}
 \def\footnoteautorefname{脚注}
 \def\itemautorefname{项}
@@ -91,12 +92,14 @@
 \def\subparagraphautorefname{子段落}
 \def\FancyVerbLineautorefname{行}
 \def\theoremautorefname{定理}
+% 创建新的定理环境
 \newtheorem{Theorem}{定理}[section]
 \newtheorem{Lemma}[Theorem]{引理}
 \newtheorem{Corollary}[Theorem]{推论}
 \newtheorem{Proposition}[Theorem]{命题}
 \newtheorem{Definition}[Theorem]{定义}
 \newtheorem{Example}[Theorem]{例}
+
 
 %%参考文献设置
 \newcommand{\reference}{

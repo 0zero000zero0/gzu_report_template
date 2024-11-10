@@ -1,38 +1,65 @@
-\usepackage{inputenc}
-\usepackage[british,UKenglish]{babel}
-\usepackage{amsmath}
-\usepackage{algorithm}%算法
-\usepackage{algorithmic}%算法
-\usepackage{appendix}%附录
-\usepackage{subfiles}%分文件编写章节
-\usepackage{booktabs}
-\usepackage{titlesec}
-\usepackage{color}
-\usepackage{graphicx}
-\usepackage{subfigure}%子图
-\usepackage{subcaption}%子图
-\usepackage{fancyref}
-\usepackage{hyperref}%超链接
-\usepackage{float}%浮动图片
-\usepackage{scrextend}
-\usepackage{setspace}
-\usepackage{xargs}
-\usepackage{multicol}
-\usepackage{nameref}
-\usepackage{longtable}
-\usepackage{sectsty}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{appendix}
-\usepackage{listings}
+% 字符编码和语言设置
+\usepackage[utf8]{inputenc} % 设置输入文件编码为UTF-8
+\usepackage[british,UKenglish]{babel} % 设置文档语言为英国英语，提供拼写检查和断行规则
+\usepackage{fontenc} % 设置输出编码，通常与 inputenc 配合使用
+
+% 数学公式和符号
+\usepackage{amsmath} % 提供数学公式和符号的增强功能
+\usepackage{amssymb} % 提供额外的数学符号，如集合符号
+\usepackage{mathtools} % 增强 amsmath 包的功能，提供更多数学功能
+
+% 表格和图形
+\usepackage{array} % 提供表格和数组环境的增强功能
+\usepackage{booktabs} % 提供更专业的表格格式（例如，\toprule，\midrule，\bottomrule等）
+\usepackage{longtable} % 允许跨页的长表格
+\usepackage{graphicx} % 用于插入和处理图形文件（如png, jpg, pdf等）
+\usepackage{subcaption} % 提供子图标注的功能，替代旧版subfigure
+
+% 字体和排版
+\usepackage{microtype} % 改进排版质量，优化字距和字符间距
+\usepackage{lmodern} % 使用现代的拉丁字体，提升排版效果
+\usepackage{sectsty} % 自定义章节标题的字体样式
+\usepackage{xcolor} % 支持颜色的设置，包括文字和表格颜色
+
+% 引用和参考文献
+\usepackage{biblatex} % 提供更灵活的文献管理和引用功能
+\usepackage{cite} % 简化文献引用并避免重复引用
+\usepackage{hyperref} % 为文档提供超链接功能，包括跳转、书签和目录链接
+\usepackage{cleveref} % 增强引用功能，自动管理交叉引用
+
+% 页面布局和样式
+\usepackage{geometry} % 用于自定义页面边距和纸张大小
+\usepackage{fancyhdr} % 自定义页眉和页脚
+\usepackage{multicol} % 用于创建多列布局
+\usepackage{setspace} % 设置行间距
+\usepackage{todo} % 插入任务列表，方便文档编写过程中添加注释
+
+% 算法和伪代码
+\usepackage{algorithm} % 提供算法的环境
+\usepackage{algorithmic} % 提供详细的算法步骤定义
+
+% 代码高亮和格式化
+\usepackage{listings} % 用于代码高亮和格式化，支持多种编程语言
+\usepackage{minted} % 基于 Pygments 的代码高亮，支持更多语言和高亮功能
+
+% 附录和文档结构
+\usepackage{appendix} % 添加附录部分
+\usepackage{subfiles} % 支持将文档拆分为多个子文件，方便组织和管理
+\usepackage{nameref} % 支持命名引用
+
+% 表格和列表
+\usepackage{enumitem} % 自定义项目符号和编号列表
+\usepackage{multirow} % 用于在表格中创建跨行单元格
+
+% 调试和文档管理
+\usepackage{todonotes} % 插入待办事项注释
+\usepackage{tracing} % 跟踪和调试 LaTeX 编译过程
+
+
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \hypersetup{colorlinks=true, linkcolor=blue}
 \interfootnotelinepenalty=10000
-
-
 
 
 \newcommand{\cleancode}[1]{\begin{addmargin}[3em]{3em}\texttt{\textcolor{cleanOrange}{#1}}\end{addmargin}}
@@ -86,3 +113,5 @@
    \end{center}
   }
 \makeatother
+
+
