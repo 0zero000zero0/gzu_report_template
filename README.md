@@ -4,7 +4,7 @@
 
 ## 模板下载
 
-[压缩包链接](https://github.com/0zero000zero0/gzu_report_template/releases/tag/v1.0)
+[压缩包链接](https://github.com/0zero000zero0/gzu_report_template/archive/refs/heads/master.zip)
 
 OR
 
