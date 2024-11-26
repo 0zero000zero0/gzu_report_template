@@ -15,8 +15,6 @@
 
 % 字符编码和语言设置
 \RequirePackage[utf8]{inputenc} % 设置输入文件编码为UTF-8
-\RequirePackage[british,UKenglish]{babel} % 设置文档语言为英国英语，提供拼写检查和断行规则
-\RequirePackage[T1]{fontenc} % 设置输出编码，通常与 inputenc 配合使用
 \RequirePackage{fontspec} % 支持字体设置
 
 % 数学公式和符号
@@ -30,8 +28,8 @@
 \RequirePackage{longtable} % 允许跨页的长表格
 \RequirePackage{tabularx} % 自动设置表格列宽
 \RequirePackage{graphicx} % 用于插入和处理图形文件（如png, jpg, pdf等）
-\RequirePackage{tikz} % 强大的绘图工具，能够绘制矢量图形
-\RequirePackage{pgfplots} % 基于tikz，用于绘制高质量的二维和三维图表
+% \RequirePackage{tikz} % 强大的绘图工具，能够绘制矢量图形
+% \RequirePackage{pgfplots} % 基于tikz，用于绘制高质量的二维和三维图表
 \RequirePackage{float} % 控制浮动体位置
 \RequirePackage{subcaption} % 提供子图标注的功能，替代旧版subfigure
 
@@ -40,17 +38,16 @@
 % 字体和排版
 \RequirePackage{microtype} % 改进排版质量，优化字距和字符间距
 \RequirePackage{lmodern} % 使用现代的拉丁字体，提升排版效果
-\RequirePackage{sectsty} % 自定义章节标题的字体样式
+\RequirePackage[raggedright]{titlesec}
 \RequirePackage{xcolor} % 支持颜色的设置，包括文字和表格颜色
 
 % 引用和参考文献
-\RequirePackage[unicode=true,colorlinks,urlcolor=blue,linkcolor=blue,citecolor=blue,bookmarksnumbered=true]{hyperref} % 为文档提供超链接功能
+\RequirePackage[unicode=true,colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue,bookmarksnumbered=true]{hyperref} % 为文档提供超链接功能
 \RequirePackage{cleveref} % 增强引用功能，自动管理交叉引用
 \RequirePackage{cite} % 简化文献引用并避免重复引用
 \RequirePackage{nameref} % 支持命名引用
 
 % 页面布局和样式
-\RequirePackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry} % 自定义页面边距
 \RequirePackage{fancyhdr} % 自定义页眉和页脚
 \RequirePackage{multicol} % 用于创建多列布局
 \RequirePackage{setspace} % 设置行间距
@@ -61,7 +58,6 @@
 
 % 代码高亮和格式化
 \RequirePackage{listings} % 用于代码高亮和格式化，支持多种编程语言
-\RequirePackage{pythonhighlight} % 用于高亮 Python 代码
 \RequirePackage{tcolorbox} % 创建带颜色框的内容
 
 % 附录和文档结构
@@ -102,6 +98,7 @@
 
 %% 更改摘要二字的样式
 \renewcommand{\abstractname}{\textbf{\large {摘\quad 要}}}
+\renewcommand{\contentsname}{\centering\textbf{\large {目\quad 录}}}
 
 %可固定下划线长度
 \makeatletter
